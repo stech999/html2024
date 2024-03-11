@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.head_menu {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    padding-bottom: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_seo {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.content_buttons {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+}
+
+.contenet_image {
+    padding-bottom: 30px;
+}
+
+.content_provide {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.content_button_start {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    vertical-align: middle;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_button_watch {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

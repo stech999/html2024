@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face { 
+    font-family: "Gilroy-Bold";
+    src: url("./fonts/GilroyBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+.center{
+    padding-right: calc(50% - 573px);
+    padding-left: calc(50% - 573px);
+    height: 700px;
+}
+
+.head_logo {
+    padding-right: 14px;
+    width: 35px;
+    height: 40px;
+}
+
+.head {
+    display: flex;
+    height: 35px;
+    padding-top: 45px;
+    padding-bottom: 89px;
+}
+
+.Grow{
+    display: flex;
+    align-items: flex-start;
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
+}
+.Be{
+    display: flex;
+    color: #F25822;
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
+    align-items: flex-start;
+}
+.growbe_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head_menu {
+    display: flex;
+    width: 533px;
+    justify-content: space-between;
+    height: 14px;
+    align-items: center;
+}
+.Home{
+    color: #F25822;
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+}
+
+.seo{
+    color: #000;
+    font-family: "Gilroy-Bold";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.indent_button{
+    height: 37px;
+}
+
+.content_seo {
+    width: 522px;
+    height: 222px;  
+}
+
+.indent_seo{
+    height: 17px;
+}
+
+.content_button{
+    display: flex;
+    align-items: center;
+}
+
+.indent_seo_image{
+    width: 41px;
+}
+
+.contenet_image {
+    padding-bottom: 30px;
+}
+
+.content_provide {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content_button_start {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    align-items: center;
+    justify-content: center;
+}
+
+.button_start{
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+}
+
+.indent_middle{
+    width: 72px;
+}
+
+.content_button_watch {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+}
+
+.content_middle{
+    padding-right: calc(50% - 573px);
+    padding-left: calc(50% - 573px);
+    height: 243px;
+}
+
+.middle_brand{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.indent_logo{
+    width: 160px;
+    height: 50px;
+}
+
+.indent_middle_logo{
+    height: 48px;
+}

@@ -93,12 +93,14 @@
     gap: 30px;
 }
 
+.content_offer_groups_all {
+    position: relative;
+}
 
-
-.content_offer_groups1 {
+.content_offer_groups {
+    top: 0;
+    position: absolute;
     display: flex;
-    background-image: url(./img/Layer43.png);
-    background-repeat: no-repeat;
     width: 360px;
     height: 260px;
     align-items: center;
@@ -107,8 +109,6 @@
     text-align: center;
     font-family: Lato;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     justify-content: center;
 }
 
@@ -120,44 +120,10 @@
     font-weight: 700;
 }
 
-.content_offer_groups2 {
-    display: flex;
-    background-image: url(./img/Rectangle30.png);
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 260px;
-    align-items: center;
-    flex-direction: column;
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    justify-content: center;
-}
-
-.content_offer_groups3 {
-    display: flex;
-    background-image: url(./img/Rectangle31.png);
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 260px;
-    align-items: center;
-    flex-direction: column;
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    justify-content: center;
-}
-
 .content_offer_groups4 {
+    top: 0;
+    position: absolute;
     display: flex;
-    background-image: url(./img/Rectangle20.png);
-    background-repeat: no-repeat;
     width: 1140px;
     height: 180px;
     align-items: center;
@@ -166,8 +132,6 @@
     text-align: center;
     font-family: Lato;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     justify-content: center;
 }
 
@@ -188,10 +152,12 @@
 }
 
 .offer_title_text {
-    display: flex;
-    justify-content: center;
-    color: #222;
-    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
 }
 
 .offer_title_text2 {

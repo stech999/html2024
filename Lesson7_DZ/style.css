@@ -12,10 +12,14 @@
 .center {
     padding-right: calc(50% - 800px);
     padding-left: calc(50% - 800px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*---beginning--- Header---*/
 .header {
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: #222;
@@ -40,6 +44,7 @@
 /*---beginning---brand---*/
 
 .brand {
+    width: 100%;
     display: flex;
     background-color: #F1E4E6;
     align-items: center;
@@ -98,10 +103,14 @@
     gap: 30px;
 }
 
-.content_offer_groups1 {
+.content_offer_groups_all {
+    position: relative;
+}
+
+.content_offer_groups {
+    top: 0;
+    position: absolute;
     display: flex;
-    background-image: url(./img/Layer43.png);
-    background-repeat: no-repeat;
     width: 360px;
     height: 260px;
     align-items: center;
@@ -110,8 +119,6 @@
     text-align: center;
     font-family: Lato;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     justify-content: center;
 }
 
@@ -123,44 +130,10 @@
     font-weight: 700;
 }
 
-.content_offer_groups2 {
-    display: flex;
-    background-image: url(./img/Rectangle30.png);
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 260px;
-    align-items: center;
-    flex-direction: column;
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    justify-content: center;
-}
-
-.content_offer_groups3 {
-    display: flex;
-    background-image: url(./img/Rectangle31.png);
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 260px;
-    align-items: center;
-    flex-direction: column;
-    color: #FFF;
-    text-align: center;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    justify-content: center;
-}
-
 .content_offer_groups4 {
+    top: 0;
+    position: absolute;
     display: flex;
-    background-image: url(./img/Rectangle20.png);
-    background-repeat: no-repeat;
     width: 1140px;
     height: 180px;
     align-items: center;
@@ -169,8 +142,6 @@
     text-align: center;
     font-family: Lato;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     justify-content: center;
 }
 
@@ -178,6 +149,7 @@
 /*---Beginning---offer---*/
 
 .offer {
+    max-width: 1140px;
     display: flex;
     padding-top: 96px;
     flex-direction: column;
@@ -209,24 +181,97 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    width: 1200px;
 }
 
 .offer_content_price2 {
+    display: flex;
+    justify-content: center;
+}
+
+.offer_content_price2:hover {
+    filter: brightness(0.5);
+    width: 100%;
+}
+
+.offer_content {
+    display: flex;
+    width: 360px;
+    background-color: #F1ECED;
+    flex-direction: column;
+    position: relative;
+}
+
+.offer_content:hover .product__add {
+    display: -webkit-box;
+    display: flex;
+}
+
+.offer_content2 {
+    display: flex;
+    width: 360px;
+    background-color: #F1ECED;
+    flex-direction: column;
+    position: relative;
+}
+
+.offer_content2:hover .product__add {
+    display: -webkit-box;
+    display: flex;
+}
+
+/* .product__img {
+    width: 100%;
+} */
+
+.product__img:hover {
+    filter: brightness(0.5);
+}
+
+.product__add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 11px;
+    color: #FFFFFF;
+}
+
+.product__add:hover {
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+.offer_content_price {
     height: 420px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+/* .offer_content_price:hover {
+    filter: brightness(0.5);
+    background: url(./img/Forma1copy.png);
+} */
 
 .offer_content_price_img {
     width: 360px;
     height: 420px;
     position: absolute;
-    background-image: url(./img/tablet/Rectangle15.png);
 }
 
-.offer_content_price_cart {
+.offer_cart {
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -240,56 +285,6 @@
     justify-content: center;
     gap: 10px;
 }
-
-.offer_content {
-    display: flex;
-    width: 360px;
-    background-color: #F8F8F8;
-    ;
-    flex-direction: column;
-}
-
-.offer_content2 {
-    display: flex;
-    width: 360px;
-    background-color: #F7E4E2;
-    flex-direction: column;
-}
-
-.offer_content3 {
-    display: flex;
-    width: 360px;
-    background-color: #F3EDED;
-    flex-direction: column;
-}
-
-.offer_content4 {
-    display: flex;
-    width: 360px;
-    background-color: #F3EEEF;
-    flex-direction: column;
-}
-
-.offer_content5 {
-    display: flex;
-    width: 360px;
-    background-color: #F3EDED;
-    flex-direction: column;
-}
-
-.offer_content6 {
-    display: flex;
-    width: 360px;
-    background-color: #F3EDED;
-    flex-direction: column;
-}
-
-.offer_content_price {
-    height: 420px;
-    display: flex;
-    justify-content: center;
-}
-
 
 .offer_content_price_title {
     color: #5D5D5D;
@@ -315,6 +310,10 @@
 }
 
 .all_products {
+    padding: 30px 0px 30px 0px;
+}
+
+.all_products_but {
     display: flex;
     width: 212px;
     height: 48px;
@@ -322,7 +321,6 @@
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
-    margin: 15px 39px 15px 39px;
     border: 1px solid #FF6A6A;
     align-items: center;
     justify-content: center;
@@ -354,6 +352,7 @@
     }
 
     .brand {
+        width: 100%;
         display: flex;
         background-color: #F1E4E6;
         align-items: center;
@@ -375,6 +374,46 @@
 
     .center_brand_text {
         width: 290px;
+    }
+
+    .tablet_img {
+        width: 232px;
+        height: 167px;
+    }
+
+    .tablet_img2 {
+        width: 734px;
+        height: 116px;
+    }
+
+    .content_offer_groups {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .content_offer_groups4 {
+        top: 0;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        justify-content: center;
     }
 
     .brand_text {
@@ -438,74 +477,6 @@
         position: absolute;
         justify-content: center;
         gap: 10px;
-    }
-
-    .content_offer_groups1 {
-        display: flex;
-        background-image: url(./img/tablet/Layer43.png);
-        background-repeat: no-repeat;
-        width: 233px;
-        height: 160px;
-        align-items: center;
-        flex-direction: column;
-        color: #FFF;
-        text-align: center;
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        justify-content: center;
-    }
-
-    .content_offer_groups2 {
-        display: flex;
-        background-image: url(./img/tablet/Rectangle30.png);
-        background-repeat: no-repeat;
-        width: 233px;
-        height: 160px;
-        align-items: center;
-        flex-direction: column;
-        color: #FFF;
-        text-align: center;
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        justify-content: center;
-    }
-
-    .content_offer_groups3 {
-        display: flex;
-        background-image: url(./img/tablet/Rectangle301.png);
-        background-repeat: no-repeat;
-        width: 233px;
-        height: 160px;
-        align-items: center;
-        flex-direction: column;
-        color: #FFF;
-        text-align: center;
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        justify-content: center;
-    }
-
-    .content_offer_groups4 {
-        display: flex;
-        background-image: url(./img/tablet/Rectangle20.png);
-        background-repeat: no-repeat;
-        width: 735px;
-        height: 117px;
-        align-items: center;
-        flex-direction: column;
-        color: #FFF;
-        text-align: center;
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        justify-content: center;
     }
 
     .offer_content_center {
